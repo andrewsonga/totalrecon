@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>applications</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="https://jonbarron.info/mipnerf/img/rays_square.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jonbarron.info/mipnerf/"/>
+    <meta property="og:title" content="mip-NeRF" />
+    <meta property="og:description" content="Project page for Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields." />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="mip-NeRF" />
+    <meta name="twitter:description" content="Project page for Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields." />
+    <meta name="twitter:image" content="https://jonbarron.info/mipnerf/img/rays_square.png" />
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <p><font size="+3">
+            <a href="index.html"> &lt&lt Click to return to Index</a>  
+        </font></p>
+
+        <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    3D Reconstruction and Downstream Applications
+                </h3>
+                <p class="text-justify">
+                We train Total-NeRF to holistically reconstruct the scene for a variety of RGBD videos. The 3rd-person / pet and egocentric views are captured from the blue and yellow camera meshes shown in the 3D reconstruction, respectively. To showcase our method's AR capabilities, we attach a sky-blue unicorn horn to the forehead of the foreground object, which is automatically propagated across all frames.
+                </p>
+                
+                <table align=center width="100%">
+                    <tr>
+                      <td colspan=1 width="12.5%"></td>
+                      <td colspan=2 width="25%" style="font-size: 100%"><center><strong>Input RGBD Video</strong></center></td>
+                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong>3D<br>Reconstruction</strong></center></td>
+                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong><span style="color:blue">3rd-Person/ </br> Pet View</span></strong></center></td>
+                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong><span style="color:#dbc300">Egocentric View</span></strong></center></td>
+                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong>Bird's Eye View</strong></center></td>
+                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong><span style="color:cyan">3D AR Filter</span></strong></center></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 100%"><center>Human 1 &<br /> Dog 1</center></td>
+                      <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/applications/humandog/nvs-all.mp4" width="100%"></video></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 100%"><center>Human 2 &<br /> Cat 1</center></td>
+                      <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/applications/humancat/nvs-all.mp4" width="100%"></video></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 100%"><center>Dog 1</center></td>
+                      <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/applications/dog1/nvs-all.mp4" width="100%"></video></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 100%"><center>Cat 1</center></td>
+                      <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/applications/cat1/nvs-all.mp4" width="100%"></video></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 100%"><center>Cat 2</center></td>
+                      <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/applications/cat2/nvs-all.mp4" width="100%"></video></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 100%"><center>Human 1</center></td>
+                      <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/applications/human1/nvs-all.mp4" width="100%"></video></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <!--
+                <br>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="my_figures/applications/humancat/nvs-all.mp4" type="video/mp4" />
+                </video>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="my_figures/applications/cat2/nvs-all.mp4" type="video/mp4" />
+                </video>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="my_figures/applications/dog1/nvs-all.mp4" type="video/mp4" />
+                </video>
+                <br><br>
+                -->
+
+        <!--
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wikipedia</a> provides an excellent introduction to spatial anti-aliasing techniques.
+                </p>
+                <p class="text-justify">
+                    Mipmaps were introduced by Lance Williams in his paper "Pyramidal Parametrics" (<a href="https://software.intel.com/sites/default/files/m/7/2/c/p1-williams.pdf">Williams (1983)</a>).
+                </p>
+                <p class="text-justify">
+                    <a href="https://dl.acm.org/doi/abs/10.1145/964965.808589">Amanatides (1984)</a> first proposed the idea of replacing rays with cones in computer graphics rendering. 
+                </p>
+                <p class="text-justify">
+                    The closely related concept of <em>ray differentials</em> (<a href="https://graphics.stanford.edu/papers/trd/">Igehy (1999)</a>) is used in most modern renderers to antialias textures and other material buffers during ray tracing.
+                </p>
+                <p class="text-justify">
+                    Cone tracing has been used along with prefiltered voxel-based representations of scene geometry for speeding up indirect illumination calculations in <a href="https://research.nvidia.com/sites/default/files/publications/GIVoxels-pg2011-authors.pdf">Crassin et al. (2011)</a>.
+                </p>
+                <p class="text-justify">
+                    Mip-NeRF was implemented on top of the <a href="https://github.com/google-research/google-research/tree/master/jaxnerf">JAXNeRF</a> codebase.
+                </p>
+            </div>
+        </div>
+        -->
+        
+        <!--    
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{
+}</textarea>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+</body>
+</html>
