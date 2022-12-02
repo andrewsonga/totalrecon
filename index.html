@@ -130,7 +130,7 @@
                 </h3>
                 <!-- <image src="img/rays.png" class="img-responsive" alt="overview"><br> -->
                     <video  width=100% height=100% muted autoplay loop>
-                    <source src="my_figures/nvs-all-humandog.mp4" type="video/mp4">
+                    <source src="my_figures/applications/humandog/nvs-all.mp4" type="video/mp4">
                     </video>
                     <br><br>
                 <p class="text-justify">
@@ -256,7 +256,33 @@
                 -->
 
                 <h4>
-                    2) Novel View Synthesis: Comparisons to Baselines <a href="nvs.html">[Click for more sequences]</a>
+                    2) Object Removal
+                </h4>  
+                <!-- <span style="font-family:Times New Roman; font-size: 120%">-->
+                <table align=center width="100%">
+                    <tr>
+                        <td width = "16.6%"></td>
+                        <td width = "16.6%" style="font-size: 120%"><center><strong> Novel View<br /> (GT) </strong></center></td>
+                        <td colspan="2" width = "33.3%" style="font-size: 120%"><center><span style="color:#3babb6"><strong> Human removed<br /> (Rendered)</strong></span></center></td>
+                        <td colspan="2" width = "33.3%" style="font-size: 120%"><center><span style="color:#d66501"><strong> Pet removed<br /> (Rendered)</strong></h5></span></center></td>
+                    </tr>
+                    <tr>
+                        <td  width = "16.6%" rowspan="1" style="font-size: 100%"><center>Human 1 &<br />  Dog 1</center></td>
+                        <td  width = "83.3%" colspan="5"><video autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/object_removal/humandog/nvs-lowerres.mp4" width="100%"></video></td>
+                    </tr>
+                    <tr>
+                        <td  width = "16.6%" rowspan="1" style="font-size: 100%"><center>Human 2 &<br />  Cat 1</center></td>
+                        <td  width = "83.3%" colspan="5"><video autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/object_removal/humancat/nvs-lowerres.mp4" width="100%"></video></td>
+                    </tr>
+                </table>
+                <br>
+                <p class="text-justify">
+                    We compare Total-Recon (ours) to <a href="https://hypernerf.github.io">HyperNeRF</a>, <a href="https://d2nerf.github.io">D<sup>2</sup>NeRF</a>, and a depth-supervised version of D<sup>2</sup>NeRF on novel-view synthesis for RGBD sequences captured with a stereo validation rig we have built. While the baseline methods are only able to reconstruct the background at best, our method is able to reconstruct <em>both</em> the background and the moving foreground(s), demonstrating holistic scene reconstruction.
+                </p>
+                <br>
+
+                <h4>
+                    3) Novel View Synthesis: Comparisons to Baselines <a href="nvs.html">[Click for more sequences]</a>
                 </h4>  
                 <!-- <span style="font-family:Times New Roman; font-size: 120%">-->
                 <table align=center width="100%">
@@ -290,7 +316,7 @@
                 <br>
 
                 <h4>
-                    3) Ablation Study on Depth Supervision <a href="ablation_depth.html">[Click for more sequences]</a>
+                    4) Ablation Study on Depth Supervision <a href="ablation_depth.html">[Click for more sequences]</a>
                 </h4>
                 <table align=center width='100%'>
                     <tr>
