@@ -121,18 +121,43 @@
                 </div>
         </div>
 
-
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Overview
+                </h3>
+                <br>
+                <table align=center width="100%">
+                    <tr>
+                        <td colspan=2 width="28.5714%" style="font-size: 100%"><center><strong>Input RGBD </br>Video</strong></center></td>
+                        <td colspan=1 width="14.2857%" style="font-size: 100%"><center><strong>3D<br>Reconstruction</strong></center></td>
+                        <td colspan=1 width="14.2857%" style="font-size: 100%"><center><strong><span style="color:blue">3rd-Pet </br>View</span></strong></center></td>
+                        <td colspan=1 width="14.2857%" style="font-size: 100%"><center><strong><span style="color:#dbbe00">Egocentric </br>View</span></strong></center></td>
+                        <td colspan=1 width="14.2857%" style="font-size: 100%"><center><strong>Bird's Eye </br>View</strong></center></td>
+                        <td colspan=1 width="14.2857%" style="font-size: 100%"><center><strong><span style="color:cyan">3D AR </br>Filter</span></strong></center></td>
+                    </tr>
+                    <tr>
+                        <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="my_figures/applications/humandog/nvs-all.mp4" width="100%"></video></td>
+                    </tr>
+                </table>
+                <br>
+                <p class="text-justify">
+                    Given a single RGBD video captured by an iPad Pro, <strong>Total-Recon</strong> recovers a 3D reconstruction of the entire scene, enabling downstream tasks such as extreme-view synthesis from 3rd-Person (or 3rd-Pet), Egocentric, and Bird's Eye views and augmented reality (AR) applications. The <strong><span style="color:blue">blue</span></strong> and <strong><span style="color:#dbbe00">yellow camera meshes</span></strong> in the 3D reconstruction represent the 3rd-pet and egocentric (pet) views, respectively. The <strong><span style="color:cyan">sky-blue unicorn horn</span></strong> represents the AR filter.
+                </p>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Abstract
                 </h3>
-                <!-- <image src="img/rays.png" class="img-responsive" alt="overview"><br> -->
-                    <video  width=100% height=100% muted autoplay loop>
-                    <source src="my_figures/applications/humandog/nvs-all.mp4" type="video/mp4">
-                    </video>
-                    <br><br>
+                <!--
+                <div class="videoWraper">
+                    <img class="img-overlay" src="my_figures/cover_figure.png" height="100%" id="video">
+                    <video autoplay loop muted src="my_figures/applications/humandog/nvs-all.mp4" type="video/mp4" width="100%"></video>
+                </div>
+                -->
                 <p class="text-justify">
                     Prior approaches to monocular-view neural reconstruction have largely been restricted to rigidly moving scenes, or short videos containing limited deformation. However, such works do not scale to minute-long videos featuring highly dynamic and deformable objects (such as humans and pets), the type of casual videos captured in our day-to-day lives and the main focus of user content. 
                     We thus present a method that recovers a 3D reconstruction of a dynamic, deformable scene from a casual RGBD video captured by a moving iPad Pro, a commodity depth sensor currently in the hands of millions of people. Our key insight to enabling holistic, multi-body reconstruction of deformable scenes merges three schools of thought: (1) an animatable 3D neural model capable of reconstructing highly deformable objects, (2) a compositional 3D scene representation that decomposes the scene into multiple deforming objects and a rigid background, and most importantly, (3) depth supervision, which resolves ambiguities inherent to multi-body monocular reconstruction, allowing for truly metric reconstruction. 
@@ -220,12 +245,12 @@
                 <table align=center width="100%">
                     <tr>
                       <td colspan=1 width="12.5%"></td>
-                      <td colspan=2 width="25%" style="font-size: 100%"><center><strong>Input RGBD Video</strong></center></td>
+                      <td colspan=2 width="25%" style="font-size: 100%"><center><strong>Input RGBD </br>Video</strong></center></td>
                       <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong>3D<br>Reconstruction</strong></center></td>
-                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong><span style="color:blue">3rd-Person/ </br> Pet View</span></strong></center></td>
+                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong><span style="color:blue">3rd-Person /</br> Pet View</span></strong></center></td>
                       <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong><span style="color:#dbc300">Egocentric View</span></strong></center></td>
                       <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong>Bird's Eye View</strong></center></td>
-                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong><span style="color:cyan">3D AR Filter</span></strong></center></td>
+                      <td colspan=1 width="12.5%" style="font-size: 100%"><center><strong><span style="color:cyan">3D AR </br>Filter</span></strong></center></td>
                     </tr>
                     <tr>
                       <td style="font-size: 100%"><center>Human 2 &<br /> Cat 1</center></td>

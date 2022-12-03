@@ -157,3 +157,24 @@ span.highlight {
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
+
+.videoWraper{
+  position:relative;
+  display:block;
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:1;
+}
+video#video {
+    width: 100%;
+}
+.videoWraper:hover .img-overlay{
+opacity:0;
+}
